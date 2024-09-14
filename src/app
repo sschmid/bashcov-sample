@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if (($#))
+then echo "hit: $*"  # this line should be covered
+else echo "miss"   # this line should NOT be covered
+fi
